@@ -1,6 +1,11 @@
 
 let currentDate = new Date();
 let hours;
+const daysOfTheWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const day = currentDate.getDay();
+const dayOfTheWeek = daysOfTheWeek[day];
+
+document.getElementById('day-of-the-week').innerHTML += dayOfTheWeek + "! ";
 
 setInterval(() => {
     currentDate = new Date();
